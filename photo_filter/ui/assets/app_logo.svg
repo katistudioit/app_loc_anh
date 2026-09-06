@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5252" />
+      <stop offset="50%" stop-color="#E53935" />
+      <stop offset="100%" stop-color="#B71C1C" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8A80" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FF5252" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+  <!-- Layered Diamond / Aperture Emblem -->
+  <path d="M24 4 L42 15 L24 26 L6 15 Z" fill="url(#grad1)" />
+  <path d="M6 19 L24 30 L42 19 L38 23 L24 32 L10 23 Z" fill="#E53935" opacity="0.85" />
+  <path d="M10 27 L24 36 L38 27 L34 31 L24 38 L14 31 Z" fill="#C62828" />
+  <path d="M14 35 L24 42 L34 35 L30 38 L24 43 L18 38 Z" fill="#B71C1C" />
+  <polygon points="24,10 34,16 24,22 14,16" fill="url(#grad2)" />
+</svg>

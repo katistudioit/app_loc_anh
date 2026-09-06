@@ -1,0 +1,34 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Build & Dist
+build/
+dist/
+*.dist/
+*.build/
+*.onefile-build/
+*.spec.bak
+warn-*.txt
+xref-*.html
+
+# Claude Code / AI tooling
+.claude/
+
+# OS metadata
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Temporary debug screenshots
+*.png
+*.jpg
+!photo_filter/ui/assets/studio_bg.jpg

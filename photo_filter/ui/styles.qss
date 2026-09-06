@@ -1,0 +1,535 @@
+/* KATISTUDIO Photo Filter - Studio Luxury Transparent Glass Design System */
+
+* {
+    font-family: "Segoe UI", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    outline: none;
+}
+
+QMainWindow, QDialog {
+    background-color: #120D0E;
+    color: #FFFFFF;
+}
+
+QWidget#centralWidget {
+    background-color: transparent;
+}
+
+/* Header typography */
+QLabel#brandTitle {
+    color: #FFFFFF;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+QLabel#brandTitle:hover {
+    color: #FF5252;
+}
+
+QLabel#brandSubtitle {
+    color: #EDE1E3;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 1px;
+}
+
+QLabel#brandSubtitle:hover {
+    color: #FFA0A8;
+}
+
+QLabel#brandBadge {
+    background-color: rgba(217, 37, 52, 0.25);
+    border: 1.2px solid #FF5252;
+    border-radius: 10px;
+    color: #FF7070;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    letter-spacing: 1px;
+}
+
+/* Form section labels */
+QLabel.form-label {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+QLabel.form-helper {
+    color: #D8CED0;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+QLabel.form-hint {
+    color: #B8ACB0;
+    font-size: 11px;
+}
+
+/* Input Fields - Trong suốt (Transparent Glass) */
+QLineEdit {
+    background-color: rgba(0, 0, 0, 0.22);
+    color: #FFFFFF;
+    border: 1.2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    padding: 9px 14px;
+    font-size: 13px;
+    selection-background-color: #D92534;
+    selection-color: #FFFFFF;
+}
+
+QLineEdit:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-color: rgba(255, 255, 255, 0.65);
+}
+
+QLineEdit:focus {
+    border: 1.5px solid #FF5252;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+QLineEdit[readOnly="true"] {
+    background-color: rgba(0, 0, 0, 0.20);
+    color: #FFFFFF;
+}
+
+/* Red Browse Button ("Chọn") - Trong suốt sang trọng */
+QPushButton#browseButton {
+    background-color: rgba(217, 37, 52, 0.25);
+    color: #FFFFFF;
+    border: 1.5px solid #FF5252;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    min-height: 38px;
+    min-width: 92px;
+    padding: 0 16px;
+}
+
+QPushButton#browseButton:hover {
+    background-color: rgba(236, 54, 70, 0.65);
+    border: 1.5px solid #FFA0A8;
+}
+
+QPushButton#browseButton:pressed {
+    background-color: rgba(217, 37, 52, 0.85);
+}
+
+/* Combobox - Format Dropdown - Trong suốt viền đỏ */
+QComboBox#formatCombo {
+    background-color: rgba(0, 0, 0, 0.20);
+    color: #FFFFFF;
+    border: 1.5px solid #FF5252;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 26px;
+}
+
+QComboBox#formatCombo:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border: 1.5px solid #FFA0A8;
+}
+
+QComboBox#formatCombo::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 28px;
+    border: none;
+}
+
+QComboBox#formatCombo::down-arrow {
+    image: url("ui/assets/chevron_down.svg");
+    width: 13px;
+    height: 13px;
+}
+
+/* Pill Comboboxes ("4 số cuối (Khuyên dùng)") - Trong suốt */
+QComboBox.pillCombo {
+    background-color: rgba(0, 0, 0, 0.20);
+    color: #FFFFFF;
+    border: 1.2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    min-height: 22px;
+}
+
+QComboBox.pillCombo:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.70);
+}
+
+QComboBox.pillCombo::drop-down {
+    border: none;
+    width: 22px;
+}
+
+QComboBox.pillCombo::down-arrow {
+    image: url("ui/assets/chevron_down.svg");
+    width: 11px;
+    height: 11px;
+}
+
+/* Combobox dropdown popup */
+QComboBox QAbstractItemView {
+    background-color: rgba(20, 14, 16, 0.95);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 8px;
+    padding: 4px;
+    selection-background-color: #D92534;
+    selection-color: #FFFFFF;
+}
+
+QComboBox QAbstractItemView::item {
+    min-height: 28px;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background-color: #D92534;
+    color: #FFFFFF;
+}
+
+/* Pill Action Buttons ("Điền tự động", "📖 Hướng dẫn") - Trong suốt */
+QPushButton.pillButton {
+    background-color: rgba(0, 0, 0, 0.20);
+    color: #FFFFFF;
+    border: 1.2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    min-height: 30px;
+    padding: 0 12px;
+}
+
+QPushButton.pillButton:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+QPushButton.pillButton:pressed {
+    background-color: rgba(255, 255, 255, 0.28);
+}
+
+/* AI Visual Match Button ("Tìm ảnh AI") */
+QPushButton#aiVisualButton {
+    background-color: rgba(230, 126, 34, 0.25);
+    color: #FFA726;
+    border: 1.5px solid #FF9800;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    min-height: 30px;
+    padding: 0 10px;
+}
+
+QPushButton#aiVisualButton:hover {
+    background-color: rgba(230, 126, 34, 0.55);
+    color: #FFFFFF;
+    border: 1.5px solid #FFB74D;
+}
+
+QPushButton#aiVisualButton:pressed {
+    background-color: rgba(230, 126, 34, 0.75);
+}
+
+/* Operation Mode Segmented Switch - Trong suốt */
+QWidget#modeContainer {
+    background-color: rgba(0, 0, 0, 0.22);
+    border: 1.2px solid rgba(255, 255, 255, 0.28);
+    border-radius: 8px;
+    padding: 3px;
+}
+
+QPushButton.modeTab {
+    background-color: transparent;
+    color: #EDE1E3;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    min-height: 22px;
+}
+
+QPushButton.modeTab:hover {
+    color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+QPushButton.modeTab:checked {
+    background-color: rgba(217, 37, 52, 0.40);
+    color: #FFFFFF;
+    font-weight: 700;
+    border: 1.5px solid #FF5252;
+}
+
+/* Text Area for file codes - Trong suốt */
+QPlainTextEdit {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    border: 1.2px solid rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 13px;
+    font-family: "Consolas", "Cascadia Code", "Segoe UI", monospace;
+    line-height: 1.4;
+    selection-background-color: #D92534;
+    selection-color: #FFFFFF;
+}
+
+QPlainTextEdit:hover {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-color: rgba(255, 255, 255, 0.65);
+}
+
+QPlainTextEdit:focus {
+    border: 1.5px solid #FF5252;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* Big Vibrant CTA Button ("Tiến hành lọc") - Trong suốt phát sáng */
+QPushButton#primaryFilterButton {
+    background-color: rgba(32, 181, 155, 0.35);
+    color: #FFFFFF;
+    border: 2px solid #20B59B;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    min-height: 50px;
+    padding: 0 24px;
+}
+
+QPushButton#primaryFilterButton:hover {
+    background-color: rgba(38, 205, 175, 0.65);
+    border: 2px solid #5DF0D5;
+    color: #FFFFFF;
+}
+
+QPushButton#primaryFilterButton:pressed {
+    background-color: rgba(26, 155, 133, 0.85);
+}
+
+QPushButton#primaryFilterButton:disabled {
+    background-color: rgba(25, 60, 55, 0.20);
+    border: 1px solid rgba(60, 120, 110, 0.35);
+    color: #7AA89E;
+}
+
+/* Checkbox */
+QCheckBox {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    spacing: 7px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1.2px solid rgba(255, 255, 255, 0.40);
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+QCheckBox::indicator:hover {
+    border-color: #FFFFFF;
+}
+
+QCheckBox::indicator:checked {
+    background-color: rgba(32, 181, 155, 0.70);
+    border-color: #20B59B;
+    image: url("ui/assets/check.svg");
+}
+
+/* Status Bar - Trong suốt */
+QStatusBar {
+    background-color: rgba(0, 0, 0, 0.30);
+    color: #E2D7DA;
+    font-size: 11px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 4px 10px;
+}
+
+/* Result Dialog / Table Styling - Glassmorphism */
+QDialog {
+    background-color: #161012;
+}
+
+QTableWidget {
+    background-color: rgba(22, 16, 18, 0.7);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 8px;
+    gridline-color: rgba(255, 255, 255, 0.12);
+    font-size: 12px;
+    selection-background-color: rgba(217, 37, 52, 0.5);
+    selection-color: #FFFFFF;
+}
+
+QHeaderView::section {
+    background-color: rgba(30, 20, 24, 0.85);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 2px solid rgba(217, 37, 52, 0.7);
+}
+
+QTableWidget::item {
+    padding: 6px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+QTableWidget::item:selected {
+    background-color: rgba(217, 37, 52, 0.6);
+}
+
+/* Card Tiles */
+QFrame.statCard {
+    background-color: rgba(26, 18, 22, 0.60);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 8px;
+    padding: 10px 14px;
+}
+
+QLabel.statValue {
+    font-size: 20px;
+    font-weight: 800;
+    color: #20B59B;
+}
+
+QLabel.statTitle {
+    font-size: 11px;
+    color: #C0B0B3;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Secondary Dialog Buttons */
+QPushButton.dialogAction {
+    background-color: rgba(35, 25, 28, 0.65);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    min-height: 38px;
+    padding: 0 16px;
+}
+
+QPushButton.dialogAction:hover {
+    background-color: rgba(50, 35, 40, 0.85);
+    border-color: rgba(255, 255, 255, 0.50);
+    color: #FFFFFF;
+}
+
+QPushButton.dialogPrimary {
+    background-color: rgba(32, 181, 155, 0.75);
+    color: #FFFFFF;
+    border: 1px solid rgba(64, 235, 205, 0.85);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    min-height: 38px;
+    padding: 0 20px;
+}
+
+QPushButton.dialogPrimary:hover {
+    background-color: rgba(38, 205, 175, 0.95);
+}
+
+/* Custom Scrollbars */
+QScrollBar:vertical {
+    background: rgba(20, 15, 18, 0.4);
+    width: 8px;
+    margin: 0;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: rgba(255, 255, 255, 0.35);
+    min-height: 25px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: rgba(255, 255, 255, 0.55);
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QScrollBar:horizontal {
+    background: rgba(20, 15, 18, 0.4);
+    height: 8px;
+    margin: 0;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:horizontal {
+    background: rgba(255, 255, 255, 0.35);
+    min-width: 25px;
+    border-radius: 4px;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0;
+}
+
+/* Studio Guide Card on Main Window - Trong suốt */
+QFrame#guideCard {
+    background-color: rgba(0, 0, 0, 0.22);
+    border: 1.2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+    padding: 2px 4px;
+}
+
+/* Studio Boss Notification Detection Card - Kính ngọc bích phát sáng */
+QFrame#bossCard {
+    background-color: rgba(32, 181, 155, 0.16);
+    border: 1.5px solid #20B59B;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+QLabel#bossTitle {
+    font-size: 11px;
+    font-weight: 800;
+    color: #5DF0D5;
+    letter-spacing: 0.5px;
+}
+
+QLabel#bossInfo {
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+QPushButton.guideLinkBtn {
+    background: transparent;
+    color: #20B59B;
+    border: none;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 6px;
+    text-align: right;
+}
+
+QPushButton.guideLinkBtn:hover {
+    color: #26C9AD;
+    text-decoration: underline;
+}
